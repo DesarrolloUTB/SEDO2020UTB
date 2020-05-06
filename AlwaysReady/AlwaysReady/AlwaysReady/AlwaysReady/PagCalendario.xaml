@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:Local="clr-namespace:AlwaysReady"
+             Title="Calendario"
+             IconImageSource="Cal2.png"
+             x:Class="AlwaysReady.PagCalendario" BackgroundColor="#ffffff">
+
+    <TabbedPage.Children>
+        <ContentPage Title="Mi Equipo" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+
+                <!-- 2DA FILA TITULO -->
+                <ScrollView Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- 1ra fila partido -->
+
+                        <Frame Grid.Row="0" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="21 DIC 2019   |  Liga Boliviana - Clausura - Jornada 24"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="1" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAurora.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Aurora" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 2da fila partido -->
+
+                        <Frame Grid.Row="2" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="18 DIC 2019   |  Liga Boliviana - Clausura - Jornada 23"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="3" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="San Jose" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscSanJ.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 18 : 15 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                        <!-- 3ra fila partido -->
+
+                        <Frame Grid.Row="4" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="14 DIC 2019   |  Liga Boliviana - Clausura - Jornada 22"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="5" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscBloming.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Blooming" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 4ta fila partido -->
+
+                        <Frame Grid.Row="6" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="11 DIC 2019   |  Liga Boliviana - Clausura - Jornada 21"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="7" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Destroyers" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscDestro.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 5ta fila partido -->
+
+                        <Frame Grid.Row="8" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="11 DIC 2019   |  Liga Boliviana - Clausura - Jornada 20"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="9" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscGuabira.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Guabira" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 6ta fila partido -->
+
+                        <Frame Grid.Row="10" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="05 DIC 2019   |  Liga Boliviana - Clausura - Jornada 19"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="11" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 5  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscRealP.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Real Potosi" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 7ma fila partido -->
+
+                        <Frame Grid.Row="12" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="01 DIC 2019   |  Liga Boliviana - Clausura - Jornada 18"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="13" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Bolivar" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscBolivar.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 3  -  0 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 8va fila partido -->
+
+                        <Frame Grid.Row="14" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="28 NOV 2019   |  Liga Boliviana - Clausura - jornada 17"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="15" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 1  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscWilster.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Wilstermann" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 9na fila partido -->
+
+                        <Frame Grid.Row="16" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="18 OCT 2019   |  Liga Boliviana - Clausura - Jornana 16"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="17" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Oriente Petrolero" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscOriente.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 1  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 10ma fila partido -->
+
+                        <Frame Grid.Row="18" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="05 OCT 2019   |  Liga Boliviana - Clausura - Jornada 15"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="19" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 3  -  2 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscRoyal.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Royal Pari" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+
+
+                    </Grid>
+                </ScrollView>
+
+                <!-- 3RA Menu pie de pagina-->
+
+
+
+            </Grid>
+        </ContentPage>
+
+        <ContentPage Title="Todos Los Equipos" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+
+                <!-- 2DA FILA TITULO -->
+                <ScrollView Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- 1ra fila partido -->
+
+                        <Frame Grid.Row="0" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="21 DIC 2019   |  Liga Boliviana - Clausura - Jornada 24"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="1" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAurora.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Aurora" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 2da fila partido -->
+
+                        <Frame Grid.Row="2" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="18 DIC 2019   |  Liga Boliviana - Clausura - Jornada 23"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="3" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="San Jose" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscSanJ.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 18 : 15 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                        <!-- 3ra fila partido -->
+
+                        <Frame Grid.Row="4" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="14 DIC 2019   |  Liga Boliviana - Clausura - Jornada 22"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="5" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscBloming.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Blooming" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 4ta fila partido -->
+
+                        <Frame Grid.Row="6" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="11 DIC 2019   |  Liga Boliviana - Clausura - Jornada 21"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="7" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Destroyers" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscDestro.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 5ta fila partido -->
+
+                        <Frame Grid.Row="8" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="11 DIC 2019   |  Liga Boliviana - Clausura - Jornada 20"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="9" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 15 : 00 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscGuabira.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Guabira" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 6ta fila partido -->
+
+                        <Frame Grid.Row="10" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="05 DIC 2019   |  Liga Boliviana - Clausura - Jornada 19"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="11" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 5  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscRealP.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Real Potosi" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 7ma fila partido -->
+
+                        <Frame Grid.Row="12" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="01 DIC 2019   |  Liga Boliviana - Clausura - Jornada 18"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="13" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Bolivar" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscBolivar.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 3  -  0 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 8va fila partido -->
+
+                        <Frame Grid.Row="14" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="28 NOV 2019   |  Liga Boliviana - Clausura - jornada 17"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="15" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 1  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscWilster.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Wilstermann" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 9na fila partido -->
+
+                        <Frame Grid.Row="16" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="18 OCT 2019   |  Liga Boliviana - Clausura - Jornana 16"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="17" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Oriente Petrolero" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscOriente.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 1  -  1 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Always Ready" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                        <!-- 10ma fila partido -->
+
+                        <Frame Grid.Row="18" BackgroundColor="#e5e5e5" BorderColor="#c7c7c7">
+                            <Label Text="05 OCT 2019   |  Liga Boliviana - Clausura - Jornada 15"
+                       FontAttributes="Bold"/>
+                        </Frame>
+                        <StackLayout Grid.Row="19" Margin="10,0,10,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0" HorizontalOptions="End">
+                                    <Label Text="Always Ready" HorizontalOptions="End" FontAttributes="Bold"
+                           TranslationY="12" TranslationX="20"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="EscAlways.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text=" 3  -  2 " TranslationY="12" FontAttributes="Bold" 
+                           FontSize="18" BackgroundColor="#770000" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Image Source="EscRoyal.png" Margin="15,5,15,15"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="Royal Pari" HorizontalOptions="Start" FontAttributes="Bold"
+                           TranslationY="12" />
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+
+
+                    </Grid>
+                </ScrollView>
+
+                <!-- 3RA Menu pie de pagina-->
+
+            </Grid>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:Local="clr-namespace:AlwaysReady"
+             Title="Main"
+             xmlns:controls1="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="AlwaysReady.MainPage">
+    <!--NavigationPage.HasNavigationBar="False"-->
+    <MasterDetailPage.Master>
+        <Local:Menu></Local:Menu>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <Local:PagPrincipal></Local:PagPrincipal>
+    </MasterDetailPage.Detail>
+    
+
+</MasterDetailPage>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Tabla" BackgroundImageSource="fondo2.jpg"
+             x:Class="AlwaysReady.PagTabla" 
+             IconImageSource="Part2.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <!-- 2DA FILA TITULO -->
+        <Label Text="Clasificación Liga Bolivia Apertura 2020" Style="{StaticResource TextoTitulo}" HorizontalOptions="Center"
+                       TextColor="White" Grid.Row="0" FontSize="20"/>
+        <Grid Grid.Row="1">
+            <ListView x:Name="listviewPos"  HorizontalOptions="FillAndExpand" 
+                    HasUnevenRows="true"
+                    RefreshControlColor="Black"
+                    SeparatorVisibility="None" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid HorizontalOptions="FillAndExpand" Padding="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="13"/>
+                                    <ColumnDefinition Width="25"/>
+                                    <ColumnDefinition Width="65"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Grid.Column="0">
+                                    <Label Text="{Binding id}" HorizontalOptions="StartAndExpand" 
+                                           FontAttributes="Bold" FontSize="10" TextColor="White"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="1">
+                                    <Image Source="{Binding escudo}" HorizontalOptions="StartAndExpand"
+                                          />
+                                </StackLayout>
+                                <StackLayout Grid.Column="2">
+                                    <Label Text="{Binding nombre}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold" FontSize="11"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="3">
+                                    <Label Text="{Binding pj}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="4">
+                                    <Label Text="{Binding gan}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="5">
+                                    <Label Text="{Binding emp}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="6">
+                                    <Label Text="{Binding per}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="7">
+                                    <Label Text="{Binding gf}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="8">
+                                    <Label Text="{Binding gc}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="9">
+                                    <Label Text="{Binding dg}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Grid.Column="10">
+                                    <Label Text="{Binding pts}" HorizontalOptions="StartAndExpand" 
+                                           TextColor="#b3b3b3"  FontAttributes="Bold"/>
+                                </StackLayout>
+
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </Grid>
+
+        <!-- 3RA Menu pie de pagina-->
+
+
+    </Grid>
+
+</ContentPage>

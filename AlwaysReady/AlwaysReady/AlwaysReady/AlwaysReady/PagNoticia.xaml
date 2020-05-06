@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Inicio" 
+             xmlns:controls1="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             IconImageSource="Ini2.png" BackgroundImageSource="fondo2.jpg"
+             x:Class="AlwaysReady.PagNoticia">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+            </Grid.RowDefinitions>
+
+            <!-- 1RA FILA LISTAS -->
+            <ScrollView>
+
+                <StackLayout>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="140"/>
+                            <RowDefinition Height="272"/>
+                            <RowDefinition Height="272"/>
+                            <RowDefinition Height="272"/>
+                            <RowDefinition Height="272"/>
+                        </Grid.RowDefinitions>
+
+                        <!-- 1.1 Partidos -->
+
+                        <StackLayout Grid.Row="0"  Opacity="0.7">
+                            
+                            <controls1:CarouselViewControl  
+                    Orientation="Horizontal" 
+                    InterPageSpacing="10" 
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="listViewCarousal" 
+                    ShowIndicators="True">
+                                <controls1:CarouselViewControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <ImageButton Source="{Binding .}" HeightRequest="200" Margin="0,5,0,10" 
+                                             BackgroundColor="Transparent"/>
+                                    </DataTemplate>
+                                </controls1:CarouselViewControl.ItemTemplate>
+                            </controls1:CarouselViewControl>
+                            
+                        </StackLayout>
+                        <!--<BoxView HeightRequest="2" BackgroundColor="#890000" 
+                Margin="10,0,10,0" TranslationY="-5"/>-->
+                        <!-- 1.2 Noticias -->
+
+                        <StackLayout Grid.Row="1">
+                            <Image Source="Noti1.jpg" Margin="10,0,10,10"/>
+                            <BoxView HeightRequest="3" WidthRequest="90" HorizontalOptions="Start" Margin="25,0,0,0"
+                                     TranslationY="-90" BackgroundColor="DarkRed" Opacity="0.6"/>
+                            <Label Text="ALWAYS READY VS THE STRONGEST TORNEO APERTURA 2020" FontAttributes="Bold"
+                                   TextColor="White" FontSize="17" TranslationY="-88" HorizontalOptions="Start"
+                                   Margin="22,0,60,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="BotonPopup"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="2">
+                            <Image Source="Noti2.jpg" Margin="10,0,10,10"/>
+                            <BoxView HeightRequest="3" WidthRequest="90" HorizontalOptions="Start" Margin="25,0,0,0"
+                                     TranslationY="-90" BackgroundColor="DarkRed" Opacity="0.6"/>
+                            <Label Text="ALWAYS READY VS AURORA TORNEO APERTURA 2020" FontAttributes="Bold"
+                                   TextColor="White" FontSize="17" TranslationY="-88" HorizontalOptions="Start"
+                                   Margin="22,0,60,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="BotonPopup2"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="3">
+                            <Image Source="Noti3.jpg" Margin="10,0,10,10"/>
+                            <BoxView HeightRequest="3" WidthRequest="90" HorizontalOptions="Start" Margin="25,0,0,0"
+                                     TranslationY="-90" BackgroundColor="DarkRed" Opacity="0.6"/>
+                            <Label Text="ALWAYS READY 2020" FontAttributes="Bold"
+                                   TextColor="White" FontSize="17" TranslationY="-88" HorizontalOptions="Start"
+                                   Margin="22,0,60,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="BotonPopup3"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="4">
+                            <Image Source="Noti4.jpg" Margin="10,0,10,10"/>
+                            <BoxView HeightRequest="3" WidthRequest="90" HorizontalOptions="Start" Margin="25,0,0,0"
+                                     TranslationY="-90" BackgroundColor="DarkRed" Opacity="0.6"/>
+                            <Label Text="PRUEBA DE TALENTOS" FontAttributes="Bold"
+                                   TextColor="White" FontSize="17" TranslationY="-88" HorizontalOptions="Start"
+                                   Margin="22,0,60,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="BotonPopup4"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="5">
+                            <Image Source="Noti5.jpg" Margin="10,0,10,10"/>
+                            <BoxView HeightRequest="3" WidthRequest="90" HorizontalOptions="Start" Margin="25,0,0,0"
+                                     TranslationY="-90" BackgroundColor="DarkRed" Opacity="0.6"/>
+                            <Label Text="ALWAYS READY VS SPORT BOYS TORNEO CLAUSURA 2019" FontAttributes="Bold"
+                                   TextColor="White" FontSize="17" TranslationY="-88" HorizontalOptions="Start"
+                                   Margin="22,0,60,0"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="BotonPopup5"/>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- 3RA FILA CONTENIDO -->
+
+
+
+            <!-- 3RA Menu pie de pagina-->
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

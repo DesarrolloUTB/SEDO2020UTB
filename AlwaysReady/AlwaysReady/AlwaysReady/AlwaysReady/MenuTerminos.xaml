@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundImageSource="fondo2.jpg"
+             x:Class="AlwaysReady.MenuTerminos">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="15"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="1">
+                <Grid>
+                    <ImageButton Source="Utb1.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="0" HeightRequest="100" Margin="10" Clicked="BotonUtb"/>
+                    <ImageButton Source="Amazonas.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="1" HeightRequest="100" Margin="10" Clicked="BotonAmazonas"/>
+                    <ImageButton Source="Tigo.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="2" HeightRequest="100" Margin="10" Clicked="BotonTigo"/>
+                    <ImageButton Source="Bago.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="3" HeightRequest="100" Margin="10" Clicked="BotonBago"/>
+                    <ImageButton Source="Suzuki.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="4" HeightRequest="100" Margin="10" Clicked="BotonSuzuki"/>
+                    <ImageButton Source="Pacena.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="5" HeightRequest="100" Margin="10" Clicked="BotonPasena"/>
+                    <ImageButton Source="Bisa.png" BackgroundColor="Transparent" HorizontalOptions="Center"
+                         Grid.Row="6" HeightRequest="100" Margin="10" Clicked="BotonBisa"/>
+                </Grid>
+            </ScrollView>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

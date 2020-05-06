@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:Local="clr-namespace:AlwaysReady"
+            Title="Main"
+             xmlns:controls1="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="AlwaysReady.MainPage" BackgroundColor="#ffffff">
+    <!--NavigationPage.HasNavigationBar="False"-->
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Order="Primary"
+                     Priority="1"
+                     IconImageSource="IconMenu.png"
+                     Clicked="BotonMiClub"/>
+    </TabbedPage.ToolbarItems>
+    <TabbedPage.Children>
+        <ContentPage Title="Inicio" IconImageSource="Ini2.png">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2"/>
+                </Grid.RowDefinitions>
+
+                <!-- 1RA FILA LISTAS -->
+                <ScrollView>
+
+                    <StackLayout>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="140"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- 1.1 Partidos -->
+
+                            <StackLayout Grid.Row="0" Margin="0,2,0,0">
+                                <controls1:CarouselViewControl  
+                    Orientation="Horizontal" 
+                    InterPageSpacing="10" 
+                    VerticalOptions="FillAndExpand" 
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="listViewCarousal" 
+                    ShowIndicators="True">
+                                    <controls1:CarouselViewControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <ImageButton Source="{Binding .}" HeightRequest="200" Margin="8" 
+                                             Clicked="BotonCalendario" BackgroundColor="Transparent"/>
+                                        </DataTemplate>
+                                    </controls1:CarouselViewControl.ItemTemplate>
+                                </controls1:CarouselViewControl>
+                                <BoxView HeightRequest="2" BackgroundColor="#890000" 
+                Margin="10,0,10,0" TranslationY="-5"/>
+                            </StackLayout>
+                            <!-- 1.2 Noticias -->
+
+                            <StackLayout Grid.Row="1">
+
+                                <ImageButton Source="List2.jpg" Margin="10,0,10,10"
+                                 Clicked="BotonPopup"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="2" >
+                                <ImageButton Source="List3.jpg" Margin="10,0,10,10"
+                                 Clicked="BotonPopup2"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="3" >
+                                <ImageButton Source="List4.jpg" Margin="10,0,10,10"
+                                 Clicked="BotonPopup3"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="4" >
+                                <ImageButton Source="List5.jpg" Margin="10,0,10,10"
+                                 Clicked="BotonPopup4"/>
+                            </StackLayout>
+
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+
+                <!-- 3RA FILA CONTENIDO -->
+
+
+
+                <!-- 3RA Menu pie de pagina-->
+
+                <BoxView BackgroundColor="#160000" Grid.Row="1"
+                         HeightRequest="2">
+
+                    <!--<Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="55"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="Start">
+                            <ImageButton Margin="25,13,25,25" BackgroundColor="Transparent"
+                             Clicked="BotonInicio" 
+                             x:Name="Inicio"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1" >
+                            <ImageButton Margin="25,13,25,25" BackgroundColor="Transparent"
+                             Clicked="BotonCalendario"
+                             x:Name="Calendario"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2" >
+                            <ImageButton Margin="25,13,25,25" BackgroundColor="Transparent"
+                             Clicked="BotonTabla"
+                             x:Name="Tabla"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="3" >
+                            <ImageButton Margin="25,13,25,25" BackgroundColor="Transparent"
+                             Clicked="BotonNoticia"
+                             x:Name="Noticia"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="4" >
+                            <ImageButton BackgroundColor="Transparent"
+                             Source="Utb.png" Margin="0,15,5,-20"/>
+                        </StackLayout>
+                    </Grid>-->
+                </BoxView>
+
+            </Grid>
+            <!--</ContentPage>
+    </MasterDetailPage.Detail>-->
+        </ContentPage>
+        <Local:PagCalendario></Local:PagCalendario>
+        <Local:PagTabla></Local:PagTabla>
+        <Local:PagCompra></Local:PagCompra>
+        <ContentPage Title="Auspiciador" IconImageSource="Utb2.png">
+
+        </ContentPage>
+    </TabbedPage.Children>
+    
+</TabbedPage>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Compras" BackgroundImageSource="fondo2.jpg"
+             x:Class="AlwaysReady.PagCompra" 
+             IconImageSource="Not2.png">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+        </Grid.RowDefinitions>
+
+        <!-- 2DA FILA TITULO -->
+
+        <StackLayout Grid.Row="0">
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout BackgroundColor="Black">
+                        <Image Source="Prod1.jpg" Margin="0,10,0,10"/>
+                        <BoxView BackgroundColor="#961515" HeightRequest="2" Margin="10,0,10,0"
+                         TranslationY="-8"/>
+                        <Label Text="PRODUCTOS OFICIALES ALWAYS READY" HorizontalOptions="Center"
+                       FontSize="20" FontAttributes="Bold" TextColor="White" 
+                       VerticalOptions="Center" TranslationY="-10"/>
+                    </StackLayout>
+                    <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="240"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                     <!-- fila venta de entrdad-->   
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="0">
+                         <ImageButton Source="Entradas.jpg" 
+                                      Clicked="BotonEntradas"/>
+                    </StackLayout>   
+                        
+                    <!-- fila 1-->
+                    <StackLayout Grid.Row="1" Grid.Column="0" Margin="10,0,1,0" BackgroundColor="Black">
+                        <Image Source="Polera1"/>
+                        <Label Text=" PRECIO : 80 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : M, L, XL " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="1" Margin="1,0,10,0" BackgroundColor="Black">
+                        <Image Source="Comp2"/>
+                        <Label Text=" PRECIO : 350 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : 40, 41, 42 " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <!-- fila 2-->
+                    <StackLayout Grid.Row="2" Grid.Column="0" Margin="10,0,1,0" BackgroundColor="Black">
+                       <Image Source="Comp3"/>
+                        <Label Text=" PRECIO : 375 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : 39, 40, 41, 42 " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Grid.Column="1" Margin="1,0,10,0" BackgroundColor="Black">
+                        <Image Source="Polera2.jpg"/>
+                        <Label Text=" PRECIO : 85 Bs " TextColor="White" 
+                            Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : S, M, L, XL " TextColor="White" 
+                            Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/> 
+                    </StackLayout>
+                    <!-- fila 3-->
+                    <StackLayout Grid.Row="3" Grid.Column="0" Margin="10,0,1,0" 
+                                 BackgroundColor="Black" HeightRequest="150" Padding="10">
+                       <Image Source="Polera4"/>
+                        <Label Text=" PRECIO : 80 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : S, M, L, XL " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3" Grid.Column="1" Margin="1,0,10,0" 
+                                 BackgroundColor="Black" HeightRequest="180">
+                       <Image Source="Comp1" />
+                        <Label Text=" PRECIO : 110 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" DETALLE : Futbol " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <!-- fila 4-->
+                    <StackLayout Grid.Row="4" Grid.Column="0" Margin="10,0,1,0" BackgroundColor="Black">
+                        <Image Source="Comp4"/>
+                        <Label Text=" PRECIO : 115 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" DETALLE : Futbol " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4" Grid.Column="1" Margin="1,0,10,0" BackgroundColor="Black">
+                        <Image Source="Polera3"/>
+                        <Label Text=" PRECIO : 85 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLAS : L, XL " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <!-- fila 4-->
+                    <StackLayout Grid.Row="5" Grid.Column="0" Margin="10,0,1,0" BackgroundColor="Black">
+                        <Image Source="Comp5"/>
+                        <Label Text=" PRECIO : 175 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" TALLA : M, L " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="5" Grid.Column="1" Margin="1,0,10,0" BackgroundColor="Black">
+                        <Image Source="Comp6"/>
+                        <Label Text=" PRECIO : 155 Bs " TextColor="White" 
+                               Margin="5,0,0,0" FontSize="12" FontAttributes="Bold"/>
+                        <Label Text=" DETALLE : Futbol " TextColor="White" 
+                               Margin="5,0,0,2" FontSize="12" FontAttributes="Bold"/>
+                    </StackLayout>
+
+                </Grid>
+                
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+        <!-- 3RA Menu pie de pagina-->
+    </Grid>
+</ContentPage>

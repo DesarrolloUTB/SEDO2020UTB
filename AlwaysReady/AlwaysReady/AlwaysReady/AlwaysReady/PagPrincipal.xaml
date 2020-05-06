@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+            xmlns:Local="clr-namespace:AlwaysReady"
+            Title="principal"
+            BackgroundColor="#300707"
+            x:Class="AlwaysReady.PagPrincipal">
+    <TabbedPage.Children>
+        <Local:PagNoticia/>
+        <Local:PagCalendario/>
+        <Local:PagTabla/>
+        <Local:PagCompra/>
+        <Local:PagMiClub/>
+    </TabbedPage.Children>
+</TabbedPage>

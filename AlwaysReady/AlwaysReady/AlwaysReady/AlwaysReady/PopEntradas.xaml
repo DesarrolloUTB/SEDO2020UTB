@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="AlwaysReady.PopEntradas">
+    
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  HeightRequest="300"
+                 BackgroundColor="Black" WidthRequest="400">
+        <ScrollView>
+            <StackLayout Margin="10,0,10,0">
+                <StackLayout>
+                    <Label Text="TIPO DE ENTRADAS" FontSize="30" FontAttributes="Bold" 
+                           TextColor="White" HorizontalOptions="Center"/>
+                </StackLayout>
+                <BoxView HeightRequest="2" BackgroundColor="DarkRed"/>
+                <StackLayout >
+
+                    <input:RadioButtonGroupView 
+                                    x:Name="radio">
+                        <input:RadioButton Text="Curva" TextColor="White"
+                                       TextFontSize="20" CircleColor="White"
+                                       x:Name="radio1"/>
+                        <input:RadioButton Text="Recta Grl." TextColor="White"
+                                       x:Name="radio2" CircleColor="White"
+                                       TextFontSize="20"/>
+                        <input:RadioButton Text="Butaca" TextColor="White"
+                                       x:Name="radio3" CircleColor="White"
+                                       TextFontSize="20" />
+                    </input:RadioButtonGroupView>
+                    <StackLayout>
+                        <Entry PlaceholderColor="White" Placeholder="N° Entradas" 
+                               TextColor="White" WidthRequest="110" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button  Text="Reservar" FontAttributes="Bold" 
+                                 TextColor="White" WidthRequest="70" BackgroundColor="#891616"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</popup:PopupPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AlwaysReady.App">
+    <Application.Resources>
+        <!--5 ESTILO TTITULOS DE PAGINAS-->
+        <OnPlatform x:Key="FuenteMade" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Old Standard TT" />
+            <On Platform="Android" Value="MadeFlorenceSans.otf#MadeFlorenceSans"/>
+        </OnPlatform>
+        <Style x:Key="TextoTitulo" TargetType="Label">
+            <Setter Property="FontFamily" Value ="{StaticResource FuenteMade}" />
+            <Setter Property="HorizontalTextAlignment"  Value="Center"/>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundImageSource="fondo2.jpg"
+             x:Class="AlwaysReady.MenuMultimedia">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <StackLayout Margin="10">
+            <Label Text="MULTIMEDIA" Style="{StaticResource TextoTitulo}" HorizontalOptions="Center"
+                       TextColor="White" Grid.Row="0"/>
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+                <StackLayout>
+                <WebView x:Name="video1" HeightRequest="170" Margin="10"/>
+                <WebView x:Name="video2" HeightRequest="170" Margin="10"/>
+                <WebView x:Name="video3" HeightRequest="170" Margin="10"/>
+                <WebView x:Name="video4" HeightRequest="170" Margin="10"/>
+                <WebView x:Name="video5" HeightRequest="170" Margin="10"/>
+                <WebView x:Name="video6" HeightRequest="170" Margin="10"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

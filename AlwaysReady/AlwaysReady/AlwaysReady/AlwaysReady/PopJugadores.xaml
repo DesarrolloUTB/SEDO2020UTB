@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="AlwaysReady.PopJugadores">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  HeightRequest="315">
+        <ScrollView>
+            <StackLayout>
+
+                <StackLayout BackgroundColor="Black"  Margin="10,0,10,0">
+                    <Image x:Name="fotojug"/>
+                    <Grid Margin="10,0,10,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                            <RowDefinition Height="25"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Posición : " TextColor="White" FontSize="18" 
+                               FontAttributes="Bold" Grid.Column="0" Grid.Row="0"/>
+                        <Label x:Name="nombre" TextColor="White" Grid.Column="1"
+                               FontSize="17" Grid.Row="0"/>
+                        
+                        <Label Text="Edad : " TextColor="White" FontSize="18" 
+                               FontAttributes="Bold" Grid.Column="0" Grid.Row="1"/>
+                        <Label x:Name="edad" TextColor="White" Grid.Column="1"
+                               FontSize="17" Grid.Row="1"/>
+                        
+                        <Label Text="L. Nacimiento : " TextColor="White" FontSize="18" 
+                               FontAttributes="Bold" Grid.Column="0" Grid.Row="2"/>
+                        <Label x:Name="nacimiento" TextColor="White" Grid.Column="1"
+                               FontSize="17" Grid.Row="2"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</popup:PopupPage>

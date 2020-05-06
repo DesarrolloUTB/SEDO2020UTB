@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AlwaysReady.PagMiClub" BackgroundColor="#313134">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Primary"
+                     Priority="1"
+                     IconImageSource="Club2.png"/>
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="#0f0f0f" Margin="0,4,0,0" Grid.Row="0" Opacity="0.8">
+            <Label Text="LISTA DE JUGADORES" FontSize="20" TextColor="White"
+                   HorizontalOptions="Center" FontAttributes="Bold"
+                   TranslationY="8"/>
+        </StackLayout>
+        <!-- 2DA FILA TITULO -->
+        <ScrollView Grid.Row="1">
+            <Grid >
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+                <!-- PORTEROS -->
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,10,0,0">
+                <Label Text="PORTEROS" TextColor="White" FontSize="17"
+                       FontAttributes="Bold" Margin="10,0,10,0"/>
+                <BoxView HeightRequest="2" BackgroundColor="#890000"
+                         Margin="10,0,10,0"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <ImageButton Source="Jug1.jpg" Margin="10,0,0,0" Clicked="BotonDetalles"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <ImageButton Source="Jug2.jpg" Margin="0,0,10,0" Clicked="BotonDetalles2"/>
+            </StackLayout>
+                <!-- DEFENSAS -->
+            <StackLayout Grid.Row="2" Grid.ColumnSpan="2">
+                <Label Text="DEFENSAS" TextColor="White" FontSize="17"
+                       FontAttributes="Bold" Margin="10,0,10,0"/>
+                <BoxView HeightRequest="2" BackgroundColor="#890000"
+                         Margin="10,0,10,0"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="0">
+                <ImageButton Source="Jug3.jpg" Margin="10,0,0,0" Clicked="BotonDetalles3"/>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="1">
+                <ImageButton Source="Jug4.jpg" Margin="0,0,10,0" Clicked="BotonDetalles4"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="0">
+                <ImageButton Source="Jug5.jpg" Margin="10,0,0,0" Clicked="BotonDetalles5"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="1">
+                <ImageButton Source="Jug6.jpg" Margin="0,0,10,0" Clicked="BotonDetalles6"/>
+            </StackLayout>
+                <!-- MEDIOCAMPISTAS -->
+                <StackLayout Grid.Row="5" Grid.ColumnSpan="2">
+                    <Label Text="MEDIOCAMPISTAS" TextColor="White" FontSize="17"
+                       FontAttributes="Bold" Margin="10,0,10,0"/>
+                    <BoxView HeightRequest="2" BackgroundColor="#890000"
+                         Margin="10,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Grid.Column="0">
+                    <Image Source="Jug7.jpg" Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="6" Grid.Column="1">
+                    <Image Source="Jug8.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Grid.Column="0">
+                    <Image Source="Jug9.jpg" Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Grid.Column="1">
+                    <Image Source="Jug10.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="8" Grid.Column="0">
+                    <Image Source="Jug11.jpg" Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="8" Grid.Column="1">
+                    <Image Source="Jug12.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+                <!-- DELANTEROS -->
+                <StackLayout Grid.Row="9" Grid.ColumnSpan="2">
+                    <Label Text="DELANTEROS" TextColor="White" FontSize="17"
+                       FontAttributes="Bold" Margin="10,0,10,0"/>
+                    <BoxView HeightRequest="2" BackgroundColor="#890000"
+                         Margin="10,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="10" Grid.Column="0">
+                    <Image Source="Jug13.jpg" Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="10" Grid.Column="1">
+                    <Image Source="Jug14.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="11" Grid.Column="0">
+                    <Image Source="Jug15.jpg" Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="11" Grid.Column="1">
+                    <Image Source="Jug16.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="12" Grid.Column="0">
+                    <Image Source="Jug17.jpg" Margin="0,0,10,0"/>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+
+        <!-- 3RA Menu pie de pagina-->
+        
+
+    </Grid>
+</ContentPage>

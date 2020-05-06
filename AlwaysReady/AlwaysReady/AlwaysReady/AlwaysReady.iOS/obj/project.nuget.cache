@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "MFkW2etabxpFfWmSDfgec6ng9CLGLZOngVMr9KLHNJvTzFXOok/QczS2i+b4uxp4UXI9AyJXZM9eDz6Y+MOF3Q==",
+  "success": true,
+  "projectFilePath": "C:\\AlwaysReady\\AlwaysReady\\AlwaysReady.iOS\\AlwaysReady.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Davis\\.nuget\\packages\\cardsview\\2.2.0\\cardsview.2.2.0.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\carouselview.formsplugin\\5.2.0\\carouselview.formsplugin.5.2.0.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\rg.plugins.popup\\1.1.4.168\\rg.plugins.popup.1.1.4.168.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\xamarin.essentials\\1.1.0\\xamarin.essentials.1.1.0.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\xamarin.forms\\4.1.0.555618\\xamarin.forms.4.1.0.555618.nupkg.sha512",
+    "C:\\Users\\Davis\\.nuget\\packages\\xamarin.forms.inputkit\\3.2.2\\xamarin.forms.inputkit.3.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}

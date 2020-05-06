@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<popup:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:controls1="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:popup="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             x:Class="AlwaysReady.PopUp">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center"  HeightRequest="400">
+        <ScrollView>
+        <StackLayout>
+
+                <StackLayout BackgroundColor="Black"  Margin="10,0,10,0">
+                    <Label TextColor="White" FontSize="23" FontAttributes="Bold"
+                   x:Name="titulo" Margin="10,0,10,0"/>
+                    <Label TextColor="White" FontAttributes="Bold" FontSize="17"
+                   x:Name="subtitulo" Margin="10,0,10,0"/>
+                </StackLayout>
+                <controls1:CarouselViewControl Margin="10,0,10,0"
+                    x:Name="caroselView"
+                    CurrentPageIndicatorTintColor="#31a8a2"
+                    HeightRequest="300"
+                    HorizontalOptions="FillAndExpand"
+                    IndicatorsShape="Circle"
+                    IndicatorsTintColor="#ecf0f5"
+                    InterPageSpacing="0"
+                    Orientation="Horizontal"
+                    ShowIndicators="True"
+                    VerticalOptions="FillAndExpand">
+                    <controls1:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Image
+                            Margin="0"
+                            Aspect="AspectFill"
+                            BackgroundColor="Green"
+                            HeightRequest="300"
+                            HorizontalOptions="FillAndExpand"
+                            Source="{Binding Thumbnail}"
+                            VerticalOptions="FillAndExpand" />
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="End" />
+                            </StackLayout>
+
+                        </DataTemplate>
+                    </controls1:CarouselViewControl.ItemTemplate>
+                </controls1:CarouselViewControl>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</popup:PopupPage>

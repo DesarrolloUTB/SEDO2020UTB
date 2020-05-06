@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundImageSource="fondo2.jpg"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             x:Class="AlwaysReady.MenuIniSecion">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+        <Label Text="REGISTRO" Style="{StaticResource TextoTitulo}" HorizontalOptions="Center"
+                       TextColor="White" Grid.Row="0"/>
+        <ScrollView Grid.Row="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+           
+            <StackLayout Grid.Row="0">
+                <input:RadioButtonGroupView  x:Name="radio">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Label Text="Elige tu personaje" TextColor="White" FontSize="15" FontAttributes="Bold" Margin="10" Grid.Row="0"/>
+                        <Image Grid.Row="1" HorizontalOptions="Center" Source="UsuHombre.png" TranslationX="-50" HeightRequest="70"/>
+                        <input:RadioButton TextColor="White" Grid.Row="1"
+                                       TextFontSize="14" CircleColor="White" HorizontalOptions="Center"
+                                       VerticalOptions="Center" HeightRequest="40"
+                                       x:Name="Varon" TranslationX="25"/>
+                        
+                        <Image Grid.Row="2" HorizontalOptions="Center" Source="UsuMujer.png" TranslationX="-50" HeightRequest="70"/>
+                        <input:RadioButton TextColor="White" Grid.Row="2"
+                                       TextFontSize="14" CircleColor="White" HorizontalOptions="Center"
+                                       VerticalOptions="Center" HeightRequest="40"
+                                       x:Name="Mujer" TranslationX="25"/>
+                    </Grid>
+                </input:RadioButtonGroupView>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1">
+                <Label Text="Nombre(s)" TextColor="White" FontSize="15" FontAttributes="Bold" Margin="10"/>
+                <Entry BackgroundColor="#bcbcbc" Opacity="0.5" TextColor="Black" FontAttributes="Bold"
+                       Margin="15,0,15,0"/>
+                
+                <Label Text="Apelido(s)" TextColor="White" FontSize="15" FontAttributes="Bold" Margin="10"/>
+                <Entry BackgroundColor="#bcbcbc" Opacity="0.5" TextColor="Black" FontAttributes="Bold"
+                       Margin="15,0,15,0"/>
+                
+                <Label Text="E-mail" TextColor="White" FontSize="15" FontAttributes="Bold" Margin="10"/>
+                <Entry BackgroundColor="#bcbcbc" Opacity="0.5" TextColor="Black" FontAttributes="Bold"
+                       Margin="15,0,15,0"/>
+                
+                <Label Text="Contraseña" TextColor="White" FontSize="15" FontAttributes="Bold" Margin="10"/>
+                <Entry BackgroundColor="#bcbcbc" Opacity="0.5" TextColor="Black" FontAttributes="Bold"
+                       Margin="15,0,15,0" IsPassword="True"/>
+                
+                <BoxView HeightRequest="30"/>
+                
+                <Button Grid.Row="5" Text="Guardar" CornerRadius="45" BackgroundColor="#3b0a0a" 
+                    BorderColor="White" TextColor="White" Margin="35,0,35,0" VerticalOptions="End" BorderWidth="1"
+                    FontSize="20"/>
+                
+                <BoxView HeightRequest="70"/>
+            </StackLayout>
+            
+        </Grid>
+        </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
